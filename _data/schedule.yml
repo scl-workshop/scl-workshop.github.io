@@ -1,0 +1,28 @@
+- 
+  date: "17 May, 2020"
+  dateReadable: "May 17"
+  tracks: 
+    #- {title: "Talk", color: "#90be4e"}
+    #- {title: "Web & Cloud", color: "#03a9f4"}
+    #- {title: "Community", color: "#e91e63"}
+  timeslots:
+  - {
+      startTime: "",
+      endTime: "",
+      sessionIds: [dummy]
+      }
+    #- {
+    #    startTime: "10:00",
+    #    endTime: "10:45",
+    #    sessionIds: [001]
+    #}
+    #- {
+    #    startTime: "11:00",
+    #    endTime: "11:45",
+    #    sessionIds: [002]
+    #}
+    #- {
+    #    startTime: "12:00",
+    #    endTime: "12:45",
+    #    sessionIds: [003]
+    #}

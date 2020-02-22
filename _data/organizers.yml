@@ -1,0 +1,8 @@
+- 
+  group: "Organizers"
+  elements: 
+    - {name: "UC Berkeley", imageUrl: "berkeley_logo.svg"}
+- 
+  group: "Co-organizers"
+  elements: 
+    - {name: "Ant Financial", imageUrl: "antfin_logo.svg"}
