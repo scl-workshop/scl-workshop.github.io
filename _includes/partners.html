@@ -2,23 +2,50 @@
 <section id="partners" class="partners">
     <div class="content-wrapper">
         <div class="col-lg-10 col-lg-offset-1">
+            <!--[><h3>{{ site.partnersTitle }}</h3><]-->
             <!--<h3>{{ site.organizersTitle }}</h3>-->
-            {% for organizer in site.data.organizers %}
-            <h3>{{ organizer.group }}</h3>
-            <ul class="list-inline">
-                {% for element in organizer.elements %}
-                <li {% if element.width != null %}style="width: {{ element.width }};"{% endif %}>
-                    <a href="{{ element.link }}" target="_blank">
-                        <img src="{{ site.baseurl }}/img/organizers/{{ element.imageUrl }}" title="{{ element.description }}" alt="{{ element.name }}">
-                    </a>
-                </li>
+            <!--<ul class="list-names-together-inline">-->
+            <!--{% for organizer in site.data.organizers %}-->
+            <!--<li {% if element.width != null %}style="width: {{ element.width }};"{% endif %}>-->
+            <!--<h4>{{ organizer.group }}</h4>-->
+            <!--<ul class="list-names-inline">-->
+            <!--    {% for element in organizer.elements %}-->
+            <!--    <li {% if element.width != null %}style="width: {{ element.width }};"{% endif %}>-->
+            <!--        <h5>{{ element.name }}</h5>-->
+            <!--        <h6>{{ element.affiliation }}</h6>-->
+            <!--        [><a href="{{ element.link }}" target="_blank"><]-->
+            <!--        [>    <img src="{{ site.baseurl }}/img/partners/{{ element.imageUrl }}" title="{{ element.description }}" alt="{{ element.name }}"><]-->
+            <!--        [></a><]-->
+            <!--    </li>-->
+            <!--    {% endfor %}-->
+            <!--</ul>-->
+            <!--</li>-->
+            <!--{% endfor %}-->
+            <!--</ul>-->
+
+            <h3>{{ site.organizersTitle }}</h3>
+            <ul class="list-names-inline">
+                {% for organizer in site.data.organizers %}
+                    <h4>{{ organizer.group }}</h4>
+                    <ul class="list-names-inline">
+                        {% for element in organizer.elements %}
+                        <li {% if element.width != null %}style="width: {{ element.width }};"{% endif %}>
+                            <h5>{{ element.name }}</h5>
+                            <h6>{{ element.affiliation }}</h6>
+                            <!--<a href="{{ element.link }}" target="_blank">-->
+                            <!--    <img src="{{ site.baseurl }}/img/partners/{{ element.imageUrl }}" title="{{ element.description }}" alt="{{ element.name }}">-->
+                            <!--</a>-->
+                        </li>
+                        {% endfor %}
+                    </ul>
                 {% endfor %}
             </ul>
-            {% endfor %}
-            {% if site.partnersEnabled %}
-            <h3>{{ site.partnersTitle }}</h3>
+
+
+            <!--<h3>{{ site.partnersTitle }}</h3>-->
+            <h3>{{ site.sponsorsTitle }}</h3>
             {% for partner in site.data.partners %}
-            <h5>{{ partner.group }}</h5>
+            <!--<h5>{{ partner.group }}</h5>-->
             <ul class="list-inline">
                 {% for element in partner.elements %}
                 <li {% if element.width != null %}style="width: {{ element.width }};"{% endif %}>
@@ -29,7 +56,6 @@
                 {% endfor %}
             </ul>
             {% endfor %}
-            {% endif %}
             <!--<a href="{{ site.c4sponsorsUrl | prepend: site.baseurl }}" class="btn btn-primary waves-effect waves-button waves-light waves-float">{{ site.partnersC4sponsorsButton }}</a>-->
         </div>
     </div> 

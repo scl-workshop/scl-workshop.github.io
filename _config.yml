@@ -70,9 +70,9 @@ heroButtons:
 # About Block
 aboutTitle: "About the Workshop"
 aboutBlock:
- - {title: "Keynote", image: "conference.jpg", text: "Keynote by Turing awardee" }
- - {title: "Invited talks", image: "workshop.jpg", text: "Invited talks by eminent researchers in academia and industry" }
- - {title: "Community", image: "hackathon.jpg", text: "Networking and building a community around technologies for secure collaborative learning" }
+ - {title: "Keynote", image: "conference.jpg", text: "(To be announced)" }
+ - {title: "Invited talks", image: "workshop.jpg", text: "Invited talks by eminent researchers from academia and industry" }
+ - {title: "Community building", image: "hackathon.jpg", text: "Connecting researchers, practitioners, and developers" }
 
 # Statistic Block
 #statisticBlockImage: "statistic.jpg"
@@ -131,7 +131,7 @@ twitterFeedEnabled: false
 # Partners Block
 organizersTitle: "Organizers"
 partnersTitle: "Partners"
-partnersEnabled: false
+sponsorsTitle: "Sponsors"
 #partnersC4sponsorsButton: "Become a sponsor"
 
 # Subscribe Block

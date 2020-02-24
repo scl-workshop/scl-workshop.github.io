@@ -14,12 +14,36 @@
             }
         }
     }
+    .list-names-inline {
+        margin-bottom: 65px;
+        li {
+            width: 20%;
+            //max-width: 400px;
+            margin: 13px 7px;
+            @media (max-width: 767px) {
+                width: 40%;
+                max-width: 160px;
+            }
+        }
+    }
+    .list-names-together-inline {
+        margin-bottom: 65px;
+        li {
+            width: 45%;
+            //max-width: 400px;
+            margin: 13px 7px;
+            @media (max-width: 767px) {
+                width: 40%;
+                max-width: 160px;
+            }
+        }
+    }
     img {
         width: 100%;
         transition: $base-transition;
-        filter: grayscale(1);
-        &:hover {
-            filter: grayscale(0);
-        }
+        //filter: grayscale(1);
+        //&:hover {
+        //    filter: grayscale(0);
+        //}
     }
 }

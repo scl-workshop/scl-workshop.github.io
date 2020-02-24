@@ -3,6 +3,9 @@
     <div class="content-wrapper">
         <div class="col-lg-10 col-lg-offset-1">
             <h3>{{ site.aboutTitle }}</h3>
+            <p>
+            The Secure Collaborative Learning Workshop is an event that seeks to build a community around secure collaborative learning. This area has seen a recent explosion of activity both in academia and industry, resulting in platforms using hardware enclaves, secure multi-party computation, federated learning, or differential privacy for collaborative learning or analytics. The aim of the workshop is to bring together prominent teams from academia and industry working in this exciting space, and foster the creation of a strong community.
+            </p>
             <div class="row about-details">
                 {% assign animationDelay = 0 %}
                 {% for about in site.aboutBlock %}
@@ -10,7 +13,7 @@
                 <div class="col-md-{{ colWidth }} col-xs-6">  
                     <div class="animated hiding" data-animation="fadeInDown" data-delay="{{ animationDelay }}">
                         <h5>{{ about.title }}</h5>
-                        <img class="img-circle" src="{{ site.baseurl }}/img/about-section/{{ about.image }}" height="128" width="128" alt="{{ about.title }}">
+                        <!--<img class="img-circle" src="{{ site.baseurl }}/img/about-section/{{ about.image }}" height="128" width="128" alt="{{ about.title }}">-->
                         <p>{{ about.text }}</p>
                     </div>
                 </div>
