@@ -3,7 +3,9 @@
   elements: 
     - {name: "Raluca Ada Popa", affiliation: "UC Berkeley"} #, imageUrl: "berkeley_logo.svg"}
 - 
-  group: "Co-organizers"
+  #group: "Co-organizers"
+  group: "Organizing committee"
   elements: 
+    - {name: "Raluca Ada Popa", affiliation: "UC Berkeley"} #, imageUrl: "berkeley_logo.svg"}
     - {name: "Rishabh Poddar", affiliation: "UC Berkeley"} #, imageUrl: "berkeley_logo.svg"}
     - {name: "Benyu Zhang", affiliation: "Ant Financial"} #, imageUrl: "berkeley_logo.svg"}
